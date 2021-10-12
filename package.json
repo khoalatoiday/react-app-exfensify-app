@@ -4,14 +4,13 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "node express_server/server.js",
     "server": "live-server public",
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=@babel/env,@babel/react --watch",
     "build:dev": "webpack",
     "build:production": "webpack --mode production --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json --watchAll",
-    "start": "node express_server/server.js",
-    "heroku-postbuild": "npm run build:production"
+    "test": "jest --config=jest.config.json --watchAll"
   },
   "author": "",
   "license": "ISC",
