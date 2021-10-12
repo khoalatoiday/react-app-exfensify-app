@@ -10,7 +10,8 @@
     "build:production": "webpack --mode production --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watchAll",
-    "start": "node express_server/server.js",
+    "build": "node express_server/server.js",
+    "start": "serve -s build",
     "heroku-postbuild": "npm run build:production"
   },
   "author": "",
