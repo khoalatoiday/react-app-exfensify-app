@@ -1,0 +1,16 @@
+/* scss code
+
+ Tư duy css code: tư duy theo các khối to -> khối nhỏ tức ta sẽ coi cả khối to có 1 div tag với class name riêng rồi tiếp đến là các khối
+ nhỏ hơn. Các khối nhỏ sẽ có css của khối to cùng với css của riêng khối đó. Cứ tiêp tục vậy khi chỉ còn 1 HTML element. Có thể có nhiều class
+ trong 1 element: class đầu tiên là class chung cho kiểu element đó tiếp đó là các class chi tiết hơn cho ứng dụng hay đặc điểm của element cụ thể đó
+ đọc comment trong các file .scss
+ chia .scss thành nhiều file cho từng phần của app
+
+ -Reset with nomarlize.css libary: giúp tất cả browser, tất cả OS đều có chung style của app, import trước file .scss của webpack app
+ -Theming với variable: giúp thay đổi các file khác dynamic với variable ~ tạo một file _setting.scss và import đầu tiên. Các file tiếp theo
+ import có thể dùng styling var trong _setting.scss
+ - Sử dụng các hàm css có sẵn với sass reference function
+*/
+@import "./base/setting";
+@import "./base/base";
+

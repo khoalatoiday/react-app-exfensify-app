@@ -1,0 +1,21 @@
+// global scss
+html {
+  font-size: 62.5%; // thiết lập 1rem = 62.5% * 16 = 10pixel
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $m-size; // 16 pixel
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active{
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+// babel file config ~ phục vụ cho set up babel cho webpack
+{
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env"
+    ],
+    "plugins": ["transform-class-properties","transform-object-rest-spread"]
+}
