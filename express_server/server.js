@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-const port = process.env.PORT || 3000; // process.env.PORT là biến mà heroku cung cấp
+const port = process.env.PORT ? process.env.PORT : 3000; // process.env.PORT là biến mà heroku cung cấp
 
 const publicPath = path.join(__dirname, "..", "public"); // chọn folder public để serve
 
