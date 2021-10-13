@@ -11,7 +11,7 @@
     "build:production": "webpack --mode production --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watchAll",
-    "heroku-postbuild": "npm run start"
+    "heroku-postbuild": "npm run build:production"
   },
   "author": "",
   "license": "ISC",
