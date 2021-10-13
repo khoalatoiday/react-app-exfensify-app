@@ -12,7 +12,7 @@ module.exports = (env) => {
   return {
     entry: "/src/app.js", // tìm app.js để chạy webpack tool
     output: {
-      path: path.join(__dirname, "/public"), // __dirname/public ~ output file
+      path: path.join(__dirname, "public"), // __dirname/public ~ output file
       filename: "bundle.js",
     },
 
@@ -56,7 +56,7 @@ module.exports = (env) => {
     devtool: isProduction ? "source-map" : "inline-source-map", // inline-source-map giúp dev tìm được code từ từng file gốc
     // set up webpack-dev-server
     devServer: {
-      // tự tạo file bundle.js và serve trong memory, chạy server
+      // tự tạo file bundle.js và serve trong virtual memory chứ không viết vào file system, chạy server
       static: path.join(__dirname, "public"),
       historyApiFallback: {
         index: "/",
