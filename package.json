@@ -7,8 +7,8 @@
     "start": "node express_server/server.js",
     "server": "live-server public",
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=@babel/env,@babel/react --watch",
-    "build:dev": "webpack --mode development",
-    "build:production": "webpack --mode production --env production",
+    "build:dev": "webpack",
+    "build:production": "webpack --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watchAll",
     "heroku-postbuild": "npm run build:production"

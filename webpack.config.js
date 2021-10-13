@@ -62,6 +62,6 @@ module.exports = (env) => {
         index: "/",
       },
     },
-    //mode: isProduction ? "production" : "development",
+    mode: isProduction ? "production" : "development",
   };
 };
