@@ -5,14 +5,14 @@
 */
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-console.log(path.join(__dirname, "public"));
+console.log(path.join(__dirname, "public","dist"));
 module.exports = (env) => {
   const isProduction = env === "production";
 
   return {
     entry: "/src/app.js", // tìm app.js để chạy webpack tool
     output: {
-      path: path.join(__dirname, "public"), // __dirname/public ~ output file
+      path: path.join(__dirname, "public","dist"), // __dirname/public ~ output file
       filename: "bundle.js",
     },
 
@@ -61,6 +61,7 @@ module.exports = (env) => {
       historyApiFallback: {
         index: "/",
       },
+     
     },
     mode: isProduction ? "production" : "development",
   };

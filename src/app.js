@@ -131,6 +131,7 @@ với các feature trong thư viện ( dùng cho ứng dụng hiện ra content 
     bundle.js, styles.css không cần phải push lên vì chúng vốn được tạo ra khi run webpack) (2 việc này sẽ set up trong package.json)
     -> Sau đó ta chạy các deploy command
     - Muốn cập nhật lại heroku thì cập nhật lại git rùi push lại với: git push heroku main
+    - npm i production: chỉ cài module mà không ở dev-dependency và đưa lên live domain
 */
 
 // ES6 syntax

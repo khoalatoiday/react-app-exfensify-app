@@ -1,6 +1,4 @@
 node_modules/
-public/bundle.js
-public/styles.css
+public/dist/
 src/test
 jest.config.json
-bundle.js.LICENSE.txt
