@@ -14,6 +14,7 @@ module.exports = (env) => {
     output: {
       path: path.join(__dirname, "public"), // __dirname/public ~ output file
       filename: "bundle.js",
+      publicPath: '/public/'
     },
 
     plugins: [
