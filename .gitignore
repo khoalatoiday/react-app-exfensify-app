@@ -3,3 +3,4 @@ public/bundle.js
 public/styles.css
 src/test
 jest.config.json
+bundle.js.LICENSE.txt
