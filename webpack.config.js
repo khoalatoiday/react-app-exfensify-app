@@ -10,7 +10,7 @@ module.exports = (env) => {
   const isProduction = env === "production";
 
   return {
-    entry: "./src/app.js", // tìm app.js để chạy webpack tool
+    entry: "/src/app.js", // tìm app.js để chạy webpack tool
     output: {
       path: path.join(__dirname, "public"), // __dirname/public ~ output file
       filename: "bundle.js",
