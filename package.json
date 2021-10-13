@@ -8,7 +8,7 @@
     "server": "live-server public",
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=@babel/env,@babel/react --watch",
     "build:dev": "webpack",
-    "build:production": "webpack --mode production --env production",
+    "build:production": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watchAll",
     "heroku-postbuild": "npm run build:production"
@@ -42,6 +42,7 @@
     "style-loader": "^3.3.0",
     "validator": "^13.6.0",
     "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"
   },
   "devDependencies": {
@@ -51,8 +52,6 @@
     "enzyme-to-json": "^3.6.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.1",
-    "mini-css-extract-plugin": "^2.4.2",
-    "serve": "^12.0.1",
-    "webpack-cli": "^4.9.0"
+    "mini-css-extract-plugin": "^2.4.2"
   }
 }
