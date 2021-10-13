@@ -12,7 +12,7 @@ module.exports = (env) => {
   return {
     entry: "/src/app.js", // tìm app.js để chạy webpack tool
     output: {
-      path: path.join(__dirname, "public"), // __dirname/public ~ output file
+      path: path.join(__dirname, "/public"), // __dirname/public ~ output file
       filename: "bundle.js",
     },
 
