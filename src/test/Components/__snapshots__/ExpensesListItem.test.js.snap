@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Expenese List Item 1`] = `
+<div>
+  <Link
+    to="/edit/undefined"
+  >
+    <h3 />
+  </Link>
+  <p>
+    Thursday, January 1st 1970, 8:00:00 am
+     -
+     
+    $0.00
+  </p>
+</div>
+`;
