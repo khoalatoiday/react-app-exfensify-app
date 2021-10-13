@@ -1,4 +1,5 @@
 node_modules/
-public/bundle.js
-public/styles.css
+public/bundle.js/
+public/styles.css/
 src/test
+jest.config.json
