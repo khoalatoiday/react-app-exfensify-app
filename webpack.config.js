@@ -5,14 +5,14 @@
 */
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-console.log(path.join(__dirname, "public","dist"));
+console.log(path.join(__dirname, "public", "dist"));
 module.exports = (env) => {
   const isProduction = env === "production";
 
   return {
     entry: "/src/app.js", // tìm app.js để chạy webpack tool
     output: {
-      path: path.join(__dirname, "public","dist"), // __dirname/public ~ output file
+      path: path.join(__dirname, "public", "dist"), // __dirname/public ~ output file
       filename: "bundle.js",
     },
 
@@ -57,11 +57,17 @@ module.exports = (env) => {
     // set up webpack-dev-server
     devServer: {
       // tự tạo file bundle.js và serve trong virtual memory chứ không viết vào file system, chạy server
-      static: path.join(__dirname, "public"),
+      static: [
+        {
+          directory: path.join(__dirname, "public"),
+        },
+      ],
+      devMiddleware: {
+        publicPath: "https://localhost:3000/dist/",
+      },
       historyApiFallback: {
         index: "/",
       },
-     
     },
     mode: isProduction ? "production" : "development",
   };

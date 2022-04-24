@@ -94,14 +94,14 @@ export default class ExpenseForm extends React.Component {
             type="text"
             placeholder="description"
             autoFocus
-            value={this.state.description}
             onChange={this.onDescriptionChange}
+            value={this.state.description}
           />
           <input
             type="text"
             placeholder="Amount"
-            value={this.state.amount}
             onChange={this.onAmountChange}
+            value={this.state.amount}
           />
 
           <SingleDatePicker
